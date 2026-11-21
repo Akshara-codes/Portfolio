@@ -20,6 +20,8 @@ It covers who I am, what I can do, my skills, the projects I've built, my backgr
 - CSS3 (flexbox, CSS variables, responsive layout)
 - Google Fonts: Montserrat, Merriweather and Sacramento
 
+## URL : https://akshara-codes.github.io/Portfolio/
+
 ## Project structure
 
 ```
@@ -40,7 +42,7 @@ It covers who I am, what I can do, my skills, the projects I've built, my backgr
 
 1. Clone the repo
    ```
-   git clone https://github.com/Akshara-codes/<repo-name>.git
+   git clone https://github.com/Akshara-codes/Portfolio.git
    ```
 2. Open `index.html` in your browser.
 
