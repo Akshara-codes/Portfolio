@@ -1,0 +1,393 @@
+/*  DESIGN TOKENS */
+:root {
+    --cream: #FFF4E1;        /* page background */
+    --green-dark: #2e6f40;   /* headings, buttons, accents */
+    --green-light: #c5e8b7;  /* soft fills, banners, dividers */
+    --border: #d4e3cf;       /* hairlines and card borders */
+    --text: #3b443d;         /* body text */
+    --muted: #5f6b62;        /* secondary text */
+    --mint: #ebf6ec;         /* alternate section background */
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: #ffffff;
+}
+
+/* HERO  */
+.hero-section{
+    background-color: #C7EABB;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+
+}
+
+h1 {
+    color: #790D16;
+    margin: 0;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+}
+
+#hill {
+    width: 500px;
+}
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top:50px;
+}
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 400px;
+
+}
+
+/* Headings: Montserrat  |  Body text: Merriweather */
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--green-dark);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+h3 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--green-dark);
+    font-weight: 600;
+}
+h4 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.heading {
+    text-align: center;
+}
+
+/* INTRO */
+.intro{
+    text-align:center;
+    margin: 0;
+    padding: 100px max(20px, calc((100% - 750px) / 2)) 80px;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.profile-picture{
+    width: 300px;
+}
+
+/* WHAT I CAN DO  */
+.what-i-do{
+    background-color: var(--mint);
+    text-align: center;
+    margin: 0;
+    padding: 80px 20px 15px;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 780px;       
+    margin: 0 auto 65px auto;
+    text-align: left;
+}
+
+
+.skill-row.reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 115px;
+    height: 115px;
+    background-color: var(--white);
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    box-shadow: 0 0 0 8px var(--mint),     /* Gap matching section background */
+                0 0 0 9px var(--border);   /* Outer thin ring */
+}
+
+.icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.skill-text h3 {
+    font-size: 1.25rem;
+    margin: 0 0 10px 0;
+}
+
+.skill-text p {
+    color: var(--text);
+    font-size: 1.05rem;
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* SKILLS */
+.skills-section {
+    margin: 0;
+    padding: 80px max(20px, calc((100% - 750px) / 2));
+    text-align: center;
+}
+
+.skill-category h3 {
+    font-size: 1.1rem;
+}
+
+.pill-container {
+    display: flex;
+    flex-wrap: wrap;        
+    justify-content: center;
+    gap: 12px;              
+  
+}
+
+.pill{
+    border: 1px solid var(--green-dark);
+    color: var(--text);
+    padding: 8px 20px;
+    border-radius: 50px;    
+    font-size: 0.95rem;
+     background-color: var(--mint)
+}
+
+/* PROJECTS */
+.projects-section {
+    background-color: var(--mint);
+    padding: 80px 20px;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden; 
+    width: calc(50% - 50px); /* 2 columns minus half the 30px gap */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-banner {
+    background-color: var(--green-light);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Sacramento", cursive;
+    font-size: 2.4rem;
+    color: var(--green-dark);
+}
+
+.card-body {
+    padding: 25px;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.card-body h3 {
+    margin: 0 0 12px 0;
+}
+
+.card-body p {
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tech-tags span {
+    font-size: 0.75rem;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.card-links {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    padding: 8px 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.btn-solid {
+    background-color: var(--green-dark);
+    color: var(--white);
+    border: 1px solid var(--green-dark);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--green-dark);
+    border: 1px solid var(--green-dark);
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%;
+    }
+}
+
+/*  BACKGROUND  */
+.background-section {
+    margin: 0;
+    padding: 80px max(20px, calc((100% - 700px) / 2));
+}
+
+.background-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.background {
+    border-left: 2px solid var(--border);
+    padding-left: 30px;
+    margin-left: 10px;
+    margin-bottom: 60px;
+}
+
+.bg-row {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.bg-row:last-child {
+    margin-bottom: 0;
+}
+
+.dot {
+    position: absolute;
+    left: -37px; /* 30px padding + 6px (half the dot width) + 1px (half the 2px border) */
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--green-dark);
+    border-radius: 50%;
+}
+
+.time-tags {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--muted);
+    margin: 0 0 4px 0;
+}
+
+.bg-row h3 {
+    font-size: 1.15rem;
+    margin: 0 0 6px 0;
+}
+
+.bg-row p {
+    color: var(--text);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.certifications {
+    text-align: center;
+}
+
+/*  CONTACT + FOOTER  */
+.contact-me {
+    background-color: var(--mint);
+    margin: 0;
+    padding: 80px max(20px, calc((100% - 750px) / 2));
+    text-align: center;
+}
+
+.contact-me h3 {
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+.contact-me p {
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 28px;
+    background-color: var(--green-dark);
+    color: var(--white);
+    border: 1px solid var(--green-dark);
+    border-radius: 4px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.bottom-container {
+    padding: 30px 20px 40px;
+    text-align: center;
+}
+
+.footer-link {
+    margin: 0 12px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    color: var(--green-dark);
+    text-decoration: none;
+}
+
+.footer-link:hover,
+.contact-btn:hover,
+.btn:hover {
+    opacity: 0.85;
+}
+
+.bottom-container p {
+    margin: 20px 0 0;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
